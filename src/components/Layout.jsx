@@ -5,16 +5,14 @@ import Footer from './Footer';
 const pages = [
   { name: 'Home', key: 'home' },
   { name: 'About', key: 'about' },
+  { name: 'Projects', key: 'projects' },
   { name: 'Contact', key: 'contact' },
 ]
 
 const Layout = ({ children, selectedPage, onSetPage }) => {
 
-  // TODO: what's stored in children, selectedPage, and onSetPage?
-
   const renderPageLinks = () => {
         
-    // TODO: What does this function do?
     return pages.map(page => (
        <li
           key={page.key}
@@ -32,6 +30,9 @@ const Layout = ({ children, selectedPage, onSetPage }) => {
 
   return (
     <div style={styles.container}>
+      {/* Header */}
+      <Header />
+
       {/* Navigation */}
       <NavBar />
 
