@@ -9,24 +9,7 @@ const pages = [
   { name: 'Contact', key: 'contact' },
 ]
 
-const Layout = ({ children, selectedPage, onSetPage }) => {
-
-  const renderPageLinks = () => {
-        
-    return pages.map(page => (
-       <li
-          key={page.key}
-          style={{
-            ...styles.sidebarLink,
-            ...(page.key === selectedPage ? styles.selected : {}),
-          }}
-          onClick={() => onSetPage(page.key)}
-        >
-          {page.name}
-        </li>
-    ));
-  }
-
+const Layout = ({ children, selectedPage, onSetPage}) => {
 
   return (
     <div style={styles.container}>
@@ -34,16 +17,13 @@ const Layout = ({ children, selectedPage, onSetPage }) => {
       <Header />
 
       {/* Navigation */}
-      <NavBar />
+      <NavBar 
+        pages={pages}
+        selectedPage={selectedPage}
+        onSetPage={onSetPage}
+      />
 
       <div style={styles.main}>
-        {/* Sidebar */}
-        <aside style={styles.sidebar}>
-          <ul>
-           {renderPageLinks()}
-          </ul>
-        </aside>
-
         {/* Content Area */}
         <section style={styles.content}>
           {children}
@@ -65,27 +45,13 @@ const styles = {
     minHeight: '100vh',
     minWidth: '100vw',
   },
-  selected: {
-    backgroundColor: '#999',
-  },
   main: {
     display: 'flex',
     flex: 1,
   },
-  sidebar: {
-    width: '200px',
-    backgroundColor: '#f4f4f4',
-    padding: '5px',
-  },
   content: {
     flex: 1,
     padding: '20px',
-  },
-  sidebarLink: {
-    display: 'block',
-    padding: '5px',
-    color: '#333',
-    textDecoration: 'none',
   },
 };
 

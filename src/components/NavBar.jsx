@@ -1,8 +1,24 @@
-const NavBar = () => {
+// might no longer be required but adding just in case
+import React from 'react'
+
+const NavBar = ({pages, selectedPage, onSetPage}) => {
   return (
     <nav style={styles.navbar}>
-        <h1>My Amazing App</h1>
-      </nav>
+      <ul style={styles.navbarList}>
+        {pages.map(page => (
+          <li
+            key={page.key}
+            style={{
+              ...styles.navbarLink,
+              ...(page.key === selectedPage ? styles.selected : {}),
+            }}
+            onClick={() => onSetPage(page.key)}
+          >
+            {page.name}
+          </li>
+        ))}
+      </ul>
+    </nav>
   )
 }
 
@@ -13,6 +29,23 @@ const styles = {
     color: '#fff',
     padding: '10px',
     textAlign: 'center',
+  },
+  navbarLink: {
+    cursor: 'pointer',
+    display: 'block',
+    padding: '5px',
+    color: '#000000',
+    textDecoration: 'none',
+  },
+  selected: {
+    backgroundColor: '#999',
+  },
+  // navbar links to lay next to each other rather than on top (as was with sidebar)
+  navbarList: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
   },
 };
 
