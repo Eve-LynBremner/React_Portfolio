@@ -81,12 +81,6 @@ const styles = {
     flex: 1,
     padding: '20px',
   },
-  footer: {
-    backgroundColor: '#333',
-    color: '#fff',
-    textAlign: 'center',
-    padding: '10px',
-  },
   sidebarLink: {
     display: 'block',
     padding: '5px',
