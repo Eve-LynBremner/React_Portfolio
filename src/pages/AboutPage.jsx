@@ -5,7 +5,7 @@ import styles from './AboutPage.module.css';
 const AboutPage = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.heading}>Welcome to the About Page</h2>
+      <h2 className={styles.heading}>About Me</h2>
       <p className={styles.content}>I’m an analytical problem‑solver with a background in financial services, 
         where I learned to turn data, patterns, and complex information into clear insights. 
         Working with SQL, Excel, and reporting tools sharpened my logic, testing mindset, 
@@ -19,7 +19,8 @@ const AboutPage = () => {
         I’m comfortable in Agile environments and familiar with tools like Jira, 
         Confluence, and SharePoint. As an aspiring Software Developer and Tester, 
         I’m passionate about clean logic, intuitive design, and building solutions 
-        that genuinely make life easier.</p>
+        that genuinely make life easier.
+      </p>
     </div>
   );
 };
