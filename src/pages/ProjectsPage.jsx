@@ -1,13 +1,13 @@
-// HomePage.js
+// ProjectsPage.js
 import React from 'react';
 
-const HomePage = () => {
+const ProjectsPage = () => {
   return (
     <div>
-      <h2>Welcome to the Home Page</h2>
-      <p>This is the main content of the home page.</p>
+      <h2>Welcome to the Projects Page</h2>
+      <p>This is the main content of the projects page.</p>
     </div>
   );
 };
 
-export default HomePage;
+export default ProjectsPage;
