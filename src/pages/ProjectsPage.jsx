@@ -16,54 +16,63 @@ import migrate_bootstrap from '../assets/migrate_bootstrap.png';
 const items = [
     {
       image: react_portfolio,
+      title: 'React Portfolio',
       borderColor: '#10B981',
       gradient: 'linear-gradient(210deg, #10B981, #000)',
       url: 'https://github.com/Eve-LynBremner/React_Portfolio'
     },
     {
       image: tech_blog,
+      title: 'Tech Blog',
       borderColor: '#F59E0B',
       gradient: 'linear-gradient(165deg, #F59E0B, #000)',
       url: 'https://github.com/Eve-LynBremner/Full_Stack_Tech_Blog_Application'
     },
     {
       image: car_quiz_site,
+      title: 'Car Quiz Site',
       borderColor: '#EF4444',
       gradient: 'linear-gradient(195deg, #EF4444, #000)',
       url: 'https://github.com/Eve-LynBremner/Quiz_Site_for_Car_Enthusiasts'
     },
     {
       image: notes_application,
+      title: 'Note taking application',
       borderColor: '#8B5CF6',
       gradient: 'linear-gradient(225deg, #8B5CF6, #000)',
       url: 'https://github.com/Eve-LynBremner/Full_Stack_Notes_Application'
     },
     {
       image: read_me_generator,
+      title: 'readme file generator',
       borderColor: '#06B6D4',
       gradient: 'linear-gradient(135deg, #06B6D4, #000)',
       url: 'https://github.com/Eve-LynBremner/Python_README_file_generator'
     },
     {
       image: to_do_list,
+      title: 'Interactive To Do List',
       borderColor: '#06B6D4',
       gradient: 'linear-gradient(135deg, #06B6D4, #000)',
       url: 'https://github.com/Eve-LynBremner/Interactive_ToDo_List'
     },
     {
       image: first_web_page,
+      title: 'First Portfolio Web Page',
       borderColor: '#06B6D4',
       gradient: 'linear-gradient(135deg, #06B6D4, #000)',
       url: 'https://github.com/Eve-LynBremner/My_First_Web_Page'
     },
     {
       image: multi_page_responsive,
+      title: 'Multi Page Responsive Website',
       borderColor: '#06B6D4',
       gradient: 'linear-gradient(135deg, #06B6D4, #000)',
       url: 'https://github.com/Eve-LynBremner/My_First_Multi_Page_Responsive_Website'
     },
     {
       image: migrate_bootstrap,
+      title: 'Bootstrapped Website',
       borderColor: '#06B6D4',
       gradient: 'linear-gradient(135deg, #06B6D4, #000)',
       url: 'https://github.com/Eve-LynBremner/Migrating_My_Website_To_Bootstrap'
