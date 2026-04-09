@@ -117,11 +117,11 @@ const useAnimationLoop = (trackRef, targetVelocity, seqWidth, seqHeight, isHover
 
 export const RepoLoop = memo(
   ({
-    logos,
+    repos,
     speed = 120,
     direction = 'left',
     width = '100%',
-    logoHeight = 28,
+    repoHeight = 28,
     gap = 32,
     pauseOnHover,
     hoverSpeed,
@@ -188,19 +188,19 @@ export const RepoLoop = memo(
       }
     }, [isVertical]);
 
-    useResizeObserver(updateDimensions, [containerRef, seqRef], [logos, gap, logoHeight, isVertical]);
+    useResizeObserver(updateDimensions, [containerRef, seqRef], [repos, gap, repoHeight, isVertical]);
 
-    useImageLoader(seqRef, updateDimensions, [logos, gap, logoHeight, isVertical]);
+    useImageLoader(seqRef, updateDimensions, [repos, gap, repoHeight, isVertical]);
 
     useAnimationLoop(trackRef, targetVelocity, seqWidth, seqHeight, isHovered, effectiveHoverSpeed, isVertical);
 
     const cssVariables = useMemo(
       () => ({
         '--repoloop-gap': `${gap}px`,
-        '--repoloop-logoHeight': `${logoHeight}px`,
+        '--repoloop-repoHeight': `${repoHeight}px`,
         ...(fadeOutColor && { '--repoloop-fadeColor': fadeOutColor })
       }),
-      [gap, logoHeight, fadeOutColor]
+      [gap, repoHeight, fadeOutColor]
     );
 
     const rootClassName = useMemo(
@@ -275,7 +275,7 @@ export const RepoLoop = memo(
       [renderItem]
     );
 
-    const logoLists = useMemo(
+    const repoLists = useMemo(
       () =>
         Array.from({ length: copyCount }, (_, copyIndex) => (
           <ul
@@ -285,10 +285,10 @@ export const RepoLoop = memo(
             aria-hidden={copyIndex > 0}
             ref={copyIndex === 0 ? seqRef : undefined}
           >
-            {logos.map((item, itemIndex) => renderLogoItem(item, `${copyIndex}-${itemIndex}`))}
+            {repos.map((item, itemIndex) => renderLogoItem(item, `${copyIndex}-${itemIndex}`))}
           </ul>
         )),
-      [copyCount, logos, renderLogoItem]
+      [copyCount, repos, renderLogoItem]
     );
 
     const containerStyle = useMemo(
@@ -307,7 +307,7 @@ export const RepoLoop = memo(
     return (
       <div ref={containerRef} className={rootClassName} style={containerStyle} role="region" aria-label={ariaLabel}>
         <div className="repoloop__track" ref={trackRef} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          {logoLists}
+          {repoLists}
         </div>
       </div>
     );

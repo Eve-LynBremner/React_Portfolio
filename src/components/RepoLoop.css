@@ -2,7 +2,7 @@
   position: relative;
 
   --repoloop-gap: 32px;
-  --repoloop-logoHeight: 28px;
+  --repoloop-repoHeight: 28px;
   --repoloop-fadeColorAuto: #ffffff;
 }
 
@@ -12,8 +12,8 @@
 }
 
 .repoloop--scale-hover {
-  padding-top: calc(var(--repoloop-logoHeight) * 0.1);
-  padding-bottom: calc(var(--repoloop-logoHeight) * 0.1);
+  padding-top: calc(var(--repoloop-repoHeight) * 0.1);
+  padding-bottom: calc(var(--repoloop-repoHeight) * 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,7 +49,7 @@
 .repoloop__item {
   flex: 0 0 auto;
   margin-right: var(--repoloop-gap);
-  font-size: var(--repoloop-logoHeight);
+  font-size: var(--repoloop-repoHeight);
   line-height: 1;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .repoloop__item img {
-  height: var(--repoloop-logoHeight);
+  height: var(--repoloop-repoHeight);
   width: auto;
   display: block;
   object-fit: contain;
