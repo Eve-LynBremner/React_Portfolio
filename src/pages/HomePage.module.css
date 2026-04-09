@@ -1,0 +1,22 @@
+.container {
+  /* max-width: 100%;
+  width: 100%; */
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+.loopcontainer {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  position: relative; 
+  overflow: hidden;
+}
+
+.image {
+  max-width: 300px;
+  height: auto;
+  border-radius: 200px;
+  border: 1px solid #ffffff;
+}
