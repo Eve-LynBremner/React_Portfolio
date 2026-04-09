@@ -17,7 +17,7 @@ const ContactPage = () => {
         <label htmlFor="message">Message:</label>
         <textarea name="message_input" id="message" rows="15"></textarea>
 
-        <button className="button sub" type="submit">Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
