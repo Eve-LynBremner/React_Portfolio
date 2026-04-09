@@ -38,6 +38,7 @@ const styles = {
   },
   selected: {
     borderRadius: '4px',
+    padding: '5px',
     border: '1px solid #000000',
   },
   // navbar links to lay next to each other rather than on top (as was with sidebar)
