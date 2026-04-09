@@ -6,7 +6,7 @@ This is a dynamic portfolio, built using React fundamentals, responsive design, 
 
 Use the live link below to visit the deployed React Web Page:
 ```sh
-https://full-stack-tech-blog.onrender.com/
+https://react-portfolio-00ea.onrender.com
 ```
 
 ## Features
