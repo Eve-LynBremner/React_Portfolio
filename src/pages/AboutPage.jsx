@@ -8,7 +8,7 @@ const AboutPage = () => {
       <h2 className={styles.heading}>About Me</h2>
       <p className={styles.content}>I’m an analytical problem‑solver with a background in financial services, 
         where I learned to turn data, patterns, and complex information into clear insights. 
-        Working with SQL, Excel, and reporting tools sharpened my logic, testing mindset, 
+        Working with SQL, Excel, and reporting tools has sharpened my logic, testing skills, 
         and love for structured problem‑solving.
         
         That curiosity naturally led me into software development. 
