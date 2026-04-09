@@ -1,16 +1,31 @@
-# React + Vite
+# React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a dynamic portfolio, built using React fundamentals, responsive design, and component-based architecture. 
 
-Currently, two official plugins are available:
+## Usage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Use the live link below to visit the deployed React Web Page:
+```sh
+https://full-stack-tech-blog.onrender.com/
+```
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Connects to 3rd Party API and retrieves list of repos
+- Presents these repos on the Home Page using a vertical LogoLoop from React Bits. 
+- Displays projects on Projects Page using ChromaGrid from React Bits
+- You can click on the links in the RepoLoop and ChromaGrid to take you to the GitHub Repo.
+- Contact Page to get in touch (no backend so not functional as yet)
+- Uses useState and useEffect to navigate different web pages
 
-## Expanding the ESLint configuration
+## License
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project is licensed under the **MIT License**.
+
+## Authors
+
+Eve-Lyn Bremner
+
+## Contact
+
+https://github.com/Eve-LynBremner
