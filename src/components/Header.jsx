@@ -11,7 +11,7 @@ const Header = () => {
 // Inline styles for simplicity
 const styles = {
   header: {
-    backgroundColor: '#333',
+    backgroundColor: '#000000',
     color: '#fff',
     textAlign: 'center',
     padding: '5px',

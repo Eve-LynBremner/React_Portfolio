@@ -25,9 +25,9 @@ const NavBar = ({pages, selectedPage, onSetPage}) => {
 // Inline styles for simplicity
 const styles = {  
   navbar: {
-    backgroundColor: '#333',
-    color: '#fff',
-    padding: '10px',
+    backgroundColor: '#ffffff',
+    color: '#000000',
+    // padding: '1px',
     textAlign: 'center',
   },
   navbarLink: {
@@ -38,7 +38,8 @@ const styles = {
     textDecoration: 'none',
   },
   selected: {
-    backgroundColor: '#999',
+    borderRadius: '4px',
+    border: '1px solid #000000',
   },
   // navbar links to lay next to each other rather than on top (as was with sidebar)
   navbarList: {
