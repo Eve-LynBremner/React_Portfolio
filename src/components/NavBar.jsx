@@ -33,7 +33,6 @@ const styles = {
   navbarLink: {
     cursor: 'pointer',
     display: 'block',
-    padding: '5px',
     color: '#000000',
     textDecoration: 'none',
   },
@@ -47,6 +46,7 @@ const styles = {
     flexWrap: 'wrap',
     justifyContent: 'space-evenly',
     alignItems: 'center',
+    fontSize: 'large',
   },
 };
 
