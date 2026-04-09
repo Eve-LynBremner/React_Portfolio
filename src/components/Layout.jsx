@@ -16,7 +16,7 @@ const Layout = ({ children, selectedPage, onSetPage}) => {
   return (
     <div style={styles.container}>
 
-      {/* BACKGROUND */}
+      {/* BACKGROUND - adding floating lines from react bits as a background */}
       <div style = {{position: "absolute", inset: 0, zIndex: 0}}>
         <FloatingLines
           enabledWaves={["top", "middle", "bottom"]}
@@ -29,7 +29,7 @@ const Layout = ({ children, selectedPage, onSetPage}) => {
         />
       </div>
 
-      {/* FOREGROUND */}
+      {/* FOREGROUND - leaving original components in the foreground */}
       <div style = {{position: "relative", zIndex: 2, display: "flex", flexDirection: "column", minHeight: "100vh"}}>
         {/* Header */}
         <Header />
