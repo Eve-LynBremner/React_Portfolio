@@ -5,14 +5,13 @@ import ChromaGrid from '../components/ChromaGrid';
 
 import react_portfolio from '../assets/react_portfolio.png';
 import tech_blog from '../assets/tech_blog.png';
-// import car_quiz_site from '../assets/car_quiz_site.png';
-// import notes_application from '../assets/notes_application.png';
-// import read_me_generator from '../assets/read_me_generator.png';
-// import country_info from '../assets/country_info.png';
-// import to_do_list from '../assets/to_do_list.png';
-// import first_web_page from '../assets/first_web_page.png';
-// import multi_page_responsive from '../assets/multi_page_responsive.png';
-// import migrate_bootstrap from '../assets/migrate_bootstrap.png';
+import car_quiz_site from '../assets/car_quiz_site.png';
+import notes_application from '../assets/notes_application.png';
+import read_me_generator from '../assets/read_me_generator.png';
+import to_do_list from '../assets/to_do_list.png';
+import first_web_page from '../assets/first_web_page.png';
+import multi_page_responsive from '../assets/multi_page_responsive.png';
+import migrate_bootstrap from '../assets/migrate_bootstrap.png';
 
 const items = [
     {
@@ -44,12 +43,6 @@ const items = [
       borderColor: '#06B6D4',
       gradient: 'linear-gradient(135deg, #06B6D4, #000)',
       url: 'https://github.com/Eve-LynBremner/Python_README_file_generator'
-    },
-    {
-      image: country_info,
-      borderColor: '#06B6D4',
-      gradient: 'linear-gradient(135deg, #06B6D4, #000)',
-      url: 'https://github.com/Eve-LynBremner/Country_Info_App'
     },
     {
       image: to_do_list,
