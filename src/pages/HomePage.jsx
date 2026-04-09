@@ -23,7 +23,7 @@ const HomePage = () => {
 
   // format required by logoloops for the repo array
   const myRepos = repos.map(repo => ({
-    node: <span>{repo.name}</span>,
+    node: <span className={styles.repoLink} style={{color: '#ffffff'}}>{repo.name}</span>,
     title: repo.description,
     href: repo.html_url
   }));
@@ -34,13 +34,13 @@ const HomePage = () => {
         <img className={styles.image} src={profile_pic} alt="profile pic" />
       </div>
       <div className={styles.loopcontainer}>
-        <RepoLoop
+        <RepoLoop 
           repos={myRepos}
           speed={70}
           direction="down"
-          logoHeight={70}
+          repoHeight={30}
           gap={60}
-          hoverSpeed={0}
+          hoverSpeed={5}
           useCustomRender={false}
         />
       </div>

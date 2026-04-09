@@ -1,6 +1,4 @@
 .container {
-  /* max-width: 100%;
-  width: 100%; */
   display: flex;
   justify-content: center;
   margin: 25px;
@@ -9,7 +7,7 @@
 .loopcontainer {
   display: flex;
   justify-content: center;
-  height: 200px;
+  height: 150px;
   position: relative; 
   overflow: hidden;
 }
@@ -19,4 +17,14 @@
   height: auto;
   border-radius: 200px;
   border: 1px solid #ffffff;
+  margin-bottom: 30px;
+}
+
+.repoLink {
+  cursor: pointer;
+}
+
+.repoLink:hover {
+  font-weight: 700;
+  text-decoration: underline;
 }
